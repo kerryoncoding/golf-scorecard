@@ -17,7 +17,7 @@
     <div class="container mt-5 scorecard shadow">
       <div class="mt-3 mb-5">
         <h1>Golf ScoreCard</h1>
-        <h3>Total Strokes: <span id="totalstrokes">0</span></h3>
+        <h3>Total Strokes: <span id="total-strokes">0</span></h3>
       </div>
       <div>
         <table class="table table-striped-columns">
@@ -36,9 +36,9 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th scope="row">STROKE</th>
-              <td id="frontnine">0</td>
+            <tr id="front-nine">
+              <th>STROKE</th>
+              <td>0</td>
             </tr>
           </tbody>
           <thead>
@@ -57,7 +57,7 @@
           </thead>
           <tbody>
             <tr>
-              <th scope="row">STROKE</th>
+              <th>STROKE</th>
               <td id="backnine"></td>
             </tr>
           </tbody>
@@ -65,8 +65,8 @@
       </div>
       <div class="mt-5">
         <div>
-          <h3>Current Hole: <span id="currenthole">1</span></h3>
-          <h3>Current Strokes: <span id="currentstrokes">0</span></h3>
+          <h3>Current Hole: <span id="current-hole">1</span></h3>
+          <h3>Strokes This Hole: <span id="current-strokes">0</span></h3>
         </div>
         <div class="row mt-5 mb-5">
           <div class="d-grid col-4 mx-auto">
@@ -89,6 +89,6 @@
         </div>
       </div>
     </div>
+    <script src="src/script.js"></script>
   </body>
-  <script src="src/script.js"></script>
 </html>
