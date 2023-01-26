@@ -39,11 +39,14 @@ function saveStroke() {
         frontRow += newColumn;
         frontNine.innerHTML = frontRow;
    } else {
-        if(hole < 19){
+        if(hole < 18){
             let newColumn = `<td>${activeStroke}</td>`; 
             backRow += newColumn;
             backNine.innerHTML = backRow;
         } else {
+            let newColumn = `<td>${activeStroke}</td>`; 
+            backRow += newColumn;
+            backNine.innerHTML = backRow;
             hole = 17;
             gameOver.innerHTML = `<div class="row mt-5 mb-5">
             <div class="d-grid col-4 mx-auto">
