@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="src/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,7 +14,7 @@
     <title>Golf Scorecard</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container mt-5 scorecard shadow">
       <div>
         <h1>Golf ScoreCard</h1>
         <h3>Total Strokes:</h3>
@@ -22,13 +22,22 @@
       <ul>
         <li>Hole 1: 0</li>
       </ul>
-      <div>
-        <button class="btn btn-primary">INCREMENT</button>
-      </div>
-      <div>
-        <button class="btn btn-danger">CLEAR</button
-        ><button class="btn btn-success">SAVE</button>
+      <div class="mt-5">
+        <div class="row">
+          <div class="d-grid col-4 mx-auto">
+            <button class="btn btn-primary btn-lg">INCREMENT</button>
+          </div>
+        </div>
+        <div class="row mt-5 mb-5">
+          <div class="d-grid col-4 mx-auto">
+            <button class="btn btn-danger">CLEAR</button>
+          </div>
+          <div class="d-grid col-4 mx-auto">
+            <button class="btn btn-success btn-lg">SAVE</button>
+          </div>
+        </div>
       </div>
     </div>
   </body>
+  <script src="src/script.js"></script>
 </html>

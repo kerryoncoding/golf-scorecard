@@ -1,5 +1,19 @@
 
+body {
+    background-image: url("/image/golf.jpg");  
+}
+
+.scorecard {
+    background-color: white;
+    border: solid rgb(10, 99, 158) 2px;
+    border-radius: 5px;
+} 
+
 h1, h3 {
     text-align: center;
 
+}
+
+ul {
+    list-style: none;
 }
