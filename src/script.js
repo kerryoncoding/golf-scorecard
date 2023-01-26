@@ -1,12 +1,26 @@
 
+let hole = 1;
+let activeStroke = 0;
+let Strokes = 0;
+
+let currentStrokes = document.getElementById("currentstrokes");
+
+let totalStrokes = document.getElementById("totalstrokes");
+
+
 function removeStroke() {
-    alert("removed stroke")
+    activeStroke=activeStroke - 1;
+    currentStrokes.innerHTML = activeStroke;
 }
 
 function addStroke() {
-    alert("added stroke")
+    activeStroke=activeStroke + 1;
+    currentStrokes.innerHTML = activeStroke;
 }
 
 function saveStroke() {
-    alert("saved stroke")
+    Strokes += activeStroke
+    totalstrokes.innerHTML = Strokes;
+    activeStroke = 0;
+    currentStrokes.innerHTML = activeStroke;
 }
