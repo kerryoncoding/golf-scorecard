@@ -16,6 +16,8 @@ let frontNine = document.getElementById("front-nine");
 
 let backNine = document.getElementById("back-nine");
 
+let gameOver = document.getElementById("buttons");
+
 console.log(frontNine);
 
 function removeStroke() {
@@ -37,14 +39,22 @@ function saveStroke() {
         frontRow += newColumn;
         frontNine.innerHTML = frontRow;
    } else {
-        if(hole<19){
+        if(hole < 19){
             let newColumn = `<td>${activeStroke}</td>`; 
             backRow += newColumn;
             backNine.innerHTML = backRow;
+        } else {
+            hole = 17;
+            gameOver.innerHTML = `<div class="row mt-5 mb-5">
+            <div class="d-grid col-4 mx-auto">
+              <button class="btn btn-primary btn-lg">
+                GREAT GAME!
+              </button>
+            </div>
+          </div>`;
         }
     }
 
-  
     hole += 1;
     currentHole.innerHTML = hole;
     activeStroke = 0;
