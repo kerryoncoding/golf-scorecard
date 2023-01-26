@@ -2,7 +2,7 @@
 let hole = 1;
 let activeStroke = 0;
 let strokes = 0;
-let rowHeader = "<th>STROKE</th>";
+let rowHeader = `<th>STROKE</th>`;
 let row = rowHeader;
 
 let currentHole = document.getElementById("current-hole");
@@ -12,6 +12,8 @@ let currentStrokes = document.getElementById("current-strokes");
 let totalStrokes = document.getElementById("total-strokes");
 
 let frontNine = document.getElementById("front-nine");
+
+let backNine = document.getElementById("back-nine");
 
 console.log(frontNine);
 
@@ -30,12 +32,15 @@ function saveStroke() {
     console.log(strokes)
     totalStrokes.innerHTML = strokes;
     if (hole < 10) {
-        let newColumn = "<td>${activeStroke}</td>"; 
+        let newColumn = `<td>${activeStroke}</td>`; 
         row += newColumn;
         console.log(row);
        frontNine.innerHTML = row;
    } else {
-        //backnine
+        let newColumn = `<td>${activeStroke}</td>`; 
+        row += newColumn;
+        console.log(row);
+       frontNine.innerHTML = row;
     }
 
   
