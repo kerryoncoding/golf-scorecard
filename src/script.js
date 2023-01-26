@@ -47,8 +47,7 @@ function saveStroke() {
             hole = 17;
             gameOver.innerHTML = `<div class="row mt-5 mb-5">
             <div class="d-grid col-4 mx-auto">
-              <button class="btn btn-primary btn-lg">
-                GREAT GAME!
+              <button class="btn btn-primary btn-lg"> <i class="fa-solid fa-award"></i> GREAT GAME!
               </button>
             </div>
           </div>`;
