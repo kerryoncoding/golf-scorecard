@@ -17,3 +17,11 @@ h1, h3 {
 .button h2 {
     text-align: center;
 }
+
+/*
+@media (min-width: @500px) {
+    table {
+        width: 75%;
+    }
+}
+*/
